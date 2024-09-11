@@ -51,11 +51,11 @@ const MainArea = () => {
   }, [location.pathname]);
 
   return (
-    <div className="main-area bg-[#AEBD48] lg:bg-transparent h-min lg:h-screen w-full">
+    <div className="main-area bg-[#AEBD48] lg:bg-transparent lg:h-screen h-full w-full">
       <Swiper
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper lg:h-full w-full"
+        className="mySwiper h-full w-full"
         spaceBetween={0} // No space between slides
         slidesPerView={1}
         ref={swiperRef}

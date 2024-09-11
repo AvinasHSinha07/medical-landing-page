@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="w-full   flex flex-col lg:flex-row items-center justify-center text-white">
+    <div className="w-full h-full  flex flex-col lg:flex-row items-center justify-center overflow-hidden text-white">
       {/* Left Section */}
       <div className="w-full lg:w-2/3 bg-[#AEBD48] p-6 lg:px-20 lg:py-12 h-full">
         <h1 className="text-5xl lg:text-8xl mt-4 lg:mt-8 mb-4 lg:mb-8">Medisuite</h1>
