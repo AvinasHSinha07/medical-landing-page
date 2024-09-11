@@ -62,7 +62,7 @@ const Abrechung = () => {
       {/* Right Section */}
       <div className="w-full  bg-[#AEBD48] p-6 flex justify-center lg:hidden">
         <img
-          className="w-full h-full object-contain"
+          className="w-72 h-72 object-contain"
           src={aberungimg}
           alt="aberungimg"
         />
