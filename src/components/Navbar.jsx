@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between py-4 px-8">
+    <div className="flex items-center justify-between py-6 px-8 md:px-16">
       <div>
         <NavLink to="/" className="flex-shrink-0">
           <img
@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:flex">
-        <ul className="flex items-center justify-between gap-4 lg:text-xs xl:text-lg font-normal">
+        <ul className="flex items-center justify-between gap-4 md:gap-2 lg:gap-2 xl:gap-4   lg:text-xs xl:text-lg font-normal">
           <li>
             <NavLink
               to="/Abrechung"
@@ -76,7 +76,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-between gap-4">
-        <button className="bg-transparent border border-black md:px-4 md:py-2 px-2 py-1 text-xs rounded-full font-bold">
+        <button className="bg-transparent border border-black md:px-4 md:py-2 px-4 py-1 text-xs rounded-full font-bold">
           Anmelden
         </button>
         <button className="flex items-center space-x-2 bg-black border border-white text-white font-bold md:px-4 md:py-2 px-2 py-1 text-xs rounded-full">

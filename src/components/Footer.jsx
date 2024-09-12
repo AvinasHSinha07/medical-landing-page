@@ -10,7 +10,7 @@ const Footer = () => {
                     © Scheitlin Medical und Medisuite sind Marken der Scheitlin Papier AG. Alle Rechte vorbehalten.
                 </p>
             </div>
-            <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mt-4 md:mt-0'>
+            <div className='flex md:flex-row items-center justify-center gap-4 md:gap-8 mt-4 md:mt-0'>
                 <img className='h-12 md:h-16' src={logo1} alt="Logo 1" />
                 <img className='h-12 md:h-16' src={logo2} alt="Logo 2" />
             </div>
