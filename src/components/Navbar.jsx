@@ -76,10 +76,10 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center justify-between gap-4">
-        <button className="bg-transparent border border-black md:px-4 md:py-2 px-4 py-1 text-xs rounded-full font-bold">
+        <button className="bg-transparent border border-black md:px-4 md:py-2 px-4 py-2 text-xs rounded-full font-bold">
           Anmelden
         </button>
-        <button className="flex items-center space-x-2 bg-black border border-white text-white font-bold md:px-4 md:py-2 px-2 py-1 text-xs rounded-full">
+        <button className="flex items-center space-x-2 bg-black border border-white text-white font-bold md:px-4 md:py-2 px-4 py-2 text-xs rounded-full">
           <span>Demoanfragen</span>
           <FaArrowRight />
         </button>

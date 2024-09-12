@@ -7,23 +7,28 @@ const Home = () => {
     <div className="w-full h-full  flex flex-col lg:flex-row items-center justify-center overflow-hidden  lg:gap-0 gap-8 text-white">
       {/* Left Section */}
       <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] py-6 px-8 md:px-16 h-full">
-        <h1 className="text-5xl lg:text-8xl mt-4 lg:mt-8 mb-4 lg:mb-8">Medisuite</h1>
-        <p className="text-lg lg:text-3xl mb-1">Die Komplettlösung</p>
-        <p className="text-lg lg:text-3xl mb-1">für eine unkomplizierte</p>
-        <p className="text-lg lg:text-3xl mb-1 font-bold">MiGeL-Versorgung</p>
+        <h1 className="text-5xl lg:text-8xl mt-4 lg:mt-8 mb-4 lg:mb-8">
+          Medisuite
+        </h1>
+        <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-9/12 font-light">
+          Die Komplettlösung für eine unkomplizierte <span className="font-bold">MiGeL-Versorgung</span>
+        </p>
         <div className="mt-6 lg:mt-10">
           <ul className="space-y-2 lg:space-y-4 text-sm lg:text-lg">
             <li className="flex items-center">
-              <FaCheck className="text-lg lg:text-2xl mr-2" /> Krankenkassen-Abrechnung
+              <FaCheck className="text-lg lg:text-2xl mr-2" />{" "}
+              Krankenkassen-Abrechnung
             </li>
             <li className="flex items-center">
               <FaCheck className="text-lg lg:text-2xl mr-2" /> Rezeptmanagement
             </li>
             <li className="flex items-center">
-              <FaCheck className="text-lg lg:text-2xl mr-2" /> Bewohnerverwaltung
+              <FaCheck className="text-lg lg:text-2xl mr-2" />{" "}
+              Bewohnerverwaltung
             </li>
             <li className="flex items-center">
-              <FaCheck className="text-lg lg:text-2xl mr-2" /> Fremdsortiment (Apotheke)
+              <FaCheck className="text-lg lg:text-2xl mr-2" /> Fremdsortiment
+              (Apotheke)
             </li>
           </ul>
         </div>
