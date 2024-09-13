@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        segoe : ["Segoe UI"],
       },
     },
   },

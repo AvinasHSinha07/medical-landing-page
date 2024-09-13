@@ -2,7 +2,7 @@ import React from 'react';
 
 const Administration = () => {
     return (
-        <div>
+        <div className='font-segoe '>
             <h1> Administration</h1>
         </div>
     );

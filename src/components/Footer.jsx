@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='bg-[#212529] text-white py-6 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between'>
             <div className='text-center md:text-left'>
-                <p className='text-sm md:text-base'>
+                <p className='text-sm md:text-base md:w-9/12'>
                     © Scheitlin Medical und Medisuite sind Marken der Scheitlin Papier AG. Alle Rechte vorbehalten.
                 </p>
             </div>

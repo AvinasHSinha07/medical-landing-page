@@ -40,10 +40,10 @@ const Abrechung = () => {
   }, []);
 
   return (
-    <div className="w-full h-full  flex flex-col lg:flex-row items-center justify-center overflow-hidden  lg:gap-0 gap-8 text-white">
+    <div className="w-full h-full font-segoe   flex flex-col lg:flex-row items-center justify-center overflow-hidden  lg:gap-0 gap-8 text-white">
       {/* Left Section */}
       <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] py-6 px-8 md:px-16 h-full">
-        <h1 className="text-5xl lg:text-8xl mt-4 lg:mt-8 mb-4 lg:mb-8">
+        <h1 className="text-5xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
           Abrechnung
         </h1>
         <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-9/12 font-light">

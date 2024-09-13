@@ -50,17 +50,19 @@ const Verordnungen = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col lg:flex-row items-center gap-20 md:gap-0 justify-center overflow-hidden text-white">
+    <div className="w-full h-full font-segoe flex flex-col lg:flex-row items-center gap-20 md:gap-0 justify-center overflow-hidden text-white">
       {/* Left Section */}
-      <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] p-6 lg:px-20 xl:py-12 h-full">
-        <h1 className="text-3xl md:text-5xl lg:text-8xl mt-4 lg:mt-8 mb-4 lg:mb-8">
-          Verordnungen
+      <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] py-6 px-8 md:px-16 h-full">
+      <h1 className="text-5xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
+      Verordnungen
         </h1>
-        <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-full">
-          Jahresverbrauch stets im Blick behalten. Rezeptvorlagen automatisch
+        <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-9/12 font-light">
+        Jahresverbrauch stets im Blick behalten. Rezeptvorlagen automatisch
           erstellen lassen. Rezepte hochladen und Bewohnern zuordnen. Ganz
           einfach.
         </p>
+       
+       
         <div className="mt-4 md:mt-2 lg:mt-4">
           <ul className="space-y-2 lg:space-y-4 text-sm md:text-base lg:text-lg">
             <li className="flex items-center">
@@ -80,8 +82,8 @@ const Verordnungen = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full lg:w-1/3 bg-[#AEBD48] lg:bg-white lg:relative flex justify-center items-center lg:justify-end">
-        <div className="p-4 md:p-6 lg:p-6 w-full rounded-lg lg:absolute lg:-left-20 -skew-x-6">
+      <div className=" lg:w-1/3 bg-[#AEBD48] lg:bg-white lg:relative flex justify-center items-center lg:justify-end">
+        <div className="p-4 md:p-6 lg:p-6 w-[400px] rounded-lg lg:absolute lg:-left-20 -skew-x-6">
           <div className="bg-gradient-to-r from-[#abbc33] to-[#abbc33]/50 text-white border border-white py-2 px-4 rounded-t-lg font-bold text-sm md:text-base lg:text-lg">
             Abteilung B
           </div>
@@ -94,7 +96,7 @@ const Verordnungen = () => {
       ].map((person, index) => (
         <div
           key={index}
-          className="flex justify-between text-black items-center py-2"
+          className="flex justify-between gap-4  text-black items-center py-2"
           ref={el => progressRefs.current[index] = el}
         >
           {/* Person Name */}
@@ -103,7 +105,7 @@ const Verordnungen = () => {
           </span>
 
           {/* Progress Bar */}
-          <div className="w-28 md:w-36 lg:w-48 h-3 md:h-4 lg:h-6 bg-gray-300 rounded-lg relative overflow-hidden">
+          <div className="w-28 md:w-36 lg:w-36 h-6 md:h-6 lg:h-6 bg-gray-300 rounded-lg relative overflow-hidden">
             <div
               className={`absolute top-0 left-0 h-full percent`}
               data-val={person.percentage}
@@ -111,7 +113,7 @@ const Verordnungen = () => {
                 width: '0%', // Start width for animation
               }}
             >
-              <small className="absolute top-1/2 transform -translate-y-1/2 left-1 text-black text-[0.5rem] md:text-[0.6rem] lg:text-xs font-semibold whitespace-nowrap">
+              <small className="absolute top-1/2 transform -translate-y-1/2 left-1 text-black text-[9px] md:text-[12px] font-semibold whitespace-nowrap">
                 CHF {person.current.toFixed(2)} / CHF {person.total.toFixed(2)}
               </small>
             </div>
