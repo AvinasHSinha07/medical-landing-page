@@ -106,7 +106,7 @@ const Verordnungen = () => {
 
       {/* Right Section */}
       <div className=" lg:w-1/3 bg-[#AEBD48]  lg:bg-white lg:relative  flex justify-center items-center lg:justify-end">
-        <div className="p-8 md:p-6 lg:p-6 md:w-[400px] w-[340px]  rounded-lg lg:absolute lg:-left-20 -skew-x-12 ">
+        <div className="p-8 md:p-6 lg:p-6 md:w-[400px] w-[320px]  rounded-lg lg:absolute lg:-left-20 -skew-x-12 ">
           <div className="bg-gradient-to-r from-[#abbc33] to-[#abbc33]/50 text-white border border-white py-2 px-4 rounded-t-lg font-bold text-sm md:text-base lg:text-lg">
             Abteilung B
           </div>
