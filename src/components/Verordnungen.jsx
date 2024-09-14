@@ -106,7 +106,7 @@ const Verordnungen = () => {
 
       {/* Right Section */}
       <div className=" lg:w-1/3 bg-[#AEBD48]  lg:bg-white lg:relative  flex justify-center items-center lg:justify-end">
-        <div className="p-8 md:p-6 lg:p-6 md:w-[400px] w-[320px]  rounded-lg lg:absolute lg:-left-20 -skew-x-12 ">
+        <div className="p-8 md:p-6 lg:p-6 md:w-[400px] xl:w-[450px] w-[340px]  rounded-lg lg:absolute lg:-left-20 -skew-x-6 md:-skew-x-12 ">
           <div className="bg-gradient-to-r from-[#abbc33] to-[#abbc33]/50 text-white border border-white py-2 px-4 rounded-t-lg font-bold text-sm md:text-base lg:text-lg">
             Abteilung B
           </div>
@@ -133,7 +133,7 @@ const Verordnungen = () => {
               className={`absolute top-0 left-0 h-full percent`}
               data-val={person.percentage}
               style={{
-                width: '0%', // Start width for animation
+                width: '0%', 
               }}
             >
               <small className="absolute top-1/2 transform -translate-y-1/2 left-1 text-black text-[9px] md:text-[12px] font-semibold whitespace-nowrap">
