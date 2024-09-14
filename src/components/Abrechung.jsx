@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import aberungimg from "/aberungimg.jpg";
-import { FaCheck } from "react-icons/fa";
+import { GiCheckMark } from "react-icons/gi";
 
 const Abrechung = () => {
   const imagesRef = useRef([]);
@@ -43,7 +43,7 @@ const Abrechung = () => {
     <div className="w-full h-full font-segoe   flex flex-col lg:flex-row items-center justify-center overflow-hidden  lg:gap-0 gap-8 text-white">
       {/* Left Section */}
       <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] py-6 px-8 md:px-16 h-full">
-        <h1 className="text-5xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
+        <h1 className="text-4xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
           Abrechnung
         </h1>
         <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-9/12 font-light">
@@ -51,16 +51,19 @@ const Abrechung = () => {
           Keine Kosten. Kein Aufwand.
         </p>
 
-        <div className="mt-6 lg:mt-10">
-          <ul className="space-y-2 lg:space-y-4 text-sm lg:text-lg">
+        <div className="mt-6 lg:mt-10 font-normal">
+        <ul className="space-y-2 lg:space-y-4 text-sm lg:text-lg">
             <li className="flex items-center">
-              <FaCheck className="text-lg lg:text-2xl mr-2" /> Alle Schweizer
-              Krankenkassen
+              <GiCheckMark   className="text-lg lg:text-2xl mr-4" />{" "}
+              <span className="md:text-2xl">Krankenkassen</span> 
+              
             </li>
             <li className="flex items-center">
-              <FaCheck className="text-lg lg:text-2xl mr-2" /> 80% automatisch
+              <GiCheckMark className="text-lg lg:text-2xl mr-4" />
+              <span className="md:text-2xl">80% automatisch</span>  
             </li>
           </ul>
+         
         </div>
       </div>
 

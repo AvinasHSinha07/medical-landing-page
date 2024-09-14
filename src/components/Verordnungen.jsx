@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { FaCheck } from "react-icons/fa";
 import arrow from "/arrow.png";
+import { GiCheckMark } from "react-icons/gi";
 
 const Verordnungen = () => {
   const progressRefs = useRef([]);
@@ -18,9 +19,9 @@ const Verordnungen = () => {
         } else if (currentWidth < 66) {
           bar.style.backgroundColor = '#fff027'; // Yellow
         } else if (currentWidth < 80) {
-          bar.style.backgroundColor = '#ff7927'; // Orange
+          bar.style.backgroundColor = '#FF7927'; // Orange
         } else {
-          bar.style.backgroundColor = '#ff2727a6'; // Red
+          bar.style.backgroundColor = '#FD6565'; // Red
         }
 
         bar.style.width = `${currentWidth}%`;
@@ -51,9 +52,9 @@ const Verordnungen = () => {
 
   return (
     <div className="w-full h-full font-segoe flex flex-col lg:flex-row items-center gap-20 md:gap-0 justify-center overflow-hidden text-white">
-      {/* Left Section */}
+ 
       <div className="w-full lg:w-2/3 flex items-start justify-center flex-col bg-[#AEBD48] py-6 px-8 md:px-16 h-full">
-      <h1 className="text-5xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
+      <h1 className="text-4xl lg:text-5xl mt-4 lg:mt-8 mb-4 lg:mb-8">
       Verordnungen
         </h1>
         <p className="text-base md:text-lg lg:text-3xl mb-1 w-full md:w-2/3 lg:w-9/12 font-light">
@@ -63,7 +64,7 @@ const Verordnungen = () => {
         </p>
        
        
-        <div className="mt-4 md:mt-2 lg:mt-4">
+        {/* <div className="mt-4 md:mt-2 lg:mt-4">
           <ul className="space-y-2 lg:space-y-4 text-sm md:text-base lg:text-lg">
             <li className="flex items-center">
               <FaCheck className="text-base md:text-lg lg:text-2xl mr-2" /> MiGeL-Barometer
@@ -78,12 +79,34 @@ const Verordnungen = () => {
               <FaCheck className="text-base md:text-lg lg:text-2xl mr-2" /> Benachrichtigungen (Apotheke)
             </li>
           </ul>
+        </div> */}
+         <div className="mt-6 lg:mt-10 font-normal">
+        <ul className="space-y-2 lg:space-y-4 text-sm lg:text-lg">
+            <li className="flex items-center">
+              <GiCheckMark   className="text-lg lg:text-2xl mr-4" />{" "}
+              <span className="md:text-2xl">MiGeL-Barometer</span> 
+              
+            </li>
+            <li className="flex items-center">
+              <GiCheckMark className="text-lg lg:text-2xl mr-4" />
+              <span className="md:text-2xl">Rezeptmanagement</span>  
+            </li>
+            <li className="flex items-center">
+              <GiCheckMark className="text-lg lg:text-2xl mr-4" />
+              <span className="md:text-2xl">Automatische Vorlagen</span>  
+            </li>
+            <li className="flex items-center">
+              <GiCheckMark className="text-lg lg:text-2xl mr-4" />
+              <span className="md:text-2xl">Benachrichtigungen (Apotheke)</span>  
+            </li>
+          </ul>
+         
         </div>
       </div>
 
       {/* Right Section */}
-      <div className=" lg:w-1/3 bg-[#AEBD48] lg:bg-white lg:relative flex justify-center items-center lg:justify-end">
-        <div className="p-4 md:p-6 lg:p-6 w-[400px] rounded-lg lg:absolute lg:-left-20 -skew-x-6">
+      <div className=" lg:w-1/3 bg-[#AEBD48]  lg:bg-white lg:relative  flex justify-center items-center lg:justify-end">
+        <div className="p-8 md:p-6 lg:p-6 md:w-[400px] w-[340px]  rounded-lg lg:absolute lg:-left-20 -skew-x-12 ">
           <div className="bg-gradient-to-r from-[#abbc33] to-[#abbc33]/50 text-white border border-white py-2 px-4 rounded-t-lg font-bold text-sm md:text-base lg:text-lg">
             Abteilung B
           </div>
